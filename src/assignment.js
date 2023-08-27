@@ -41,7 +41,14 @@ function countEvenNumbersWithin(destination) {
     let sum = 0;
     let count = 0;
     let arrayOfEvenNumbers = [];
-
+    for(let i = 1;  i <= destination; i++){
+        
+        if(i % 2 == 0 && i > 1){
+          	sum += i;
+          	count++;
+            arrayOfEvenNumbers.push(i);
+        }
+      }
     return {
         // property value shorthand
         // when the property name and the value name are the same
@@ -52,7 +59,7 @@ function countEvenNumbersWithin(destination) {
     };
 }
 
-// assignment.countEvenNumbersWithin = countEvenNumbersWithin;
+assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
 /**
  * Challenge - 3
