@@ -78,11 +78,14 @@ assignment.countEvenNumbersWithin = countEvenNumbersWithin;
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
     let result = [];
-
+    for(let temp of arrayOfNumbers){
+        let tempInFahrenheit = Math.trunc((temp * 9/5)+32);
+        result.push(tempInFahrenheit);
+      }
     return result;
 }
 
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
 // DO NOT EDIT THIS BLOCK
